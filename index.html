@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC SUPER SHOP</title>
+    
+    <!-- this file have to be used at first -->
+    <script src="jquery-1.11.1.js"></script>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!-- My own css and js files -->
+    <link rel="stylesheet" href="myStyle.css">
+    <script src="myJS.js"></script>
+    <!-- My own css and js files -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <body onload="hideButton();">
+    
+    <div class="container"> 
+            <h2 class="title">ABC SUPER SHOP</h2>  
+            
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary" id="btnAddItem" onclick="addItem();">Add Item</button>
+                <button type="button" class="btn btn-primary" id="btnNext" data-toggle="tooltip" title="Keyboard shortcut : Enter Key, to entry next item." onclick="nextItem();">Next</button>
+                <button type="button" class="btn btn-primary" id="btnUpdate" onclick="updateItem();">Update</button>
+                <button type="button" class="btn btn-primary" id="btnSubmit" onclick="getTotalPrice();">Submit</button>
+                <button type="button" class="btn btn-success" id="btnNewList" onclick="newList();">New List</button>
+            </div>
+            
+            <div id="tipsText">
+                <p>Using tips : After click 'Add Item' you can use 'ARROW KEY' to control 'Item Name' then press 'TAB KEY' for 'Quantity' field, finally press 'ENTER' key to entry the item.</p>
+            </div>
+           
+            <table class="table" id="my_table">
+                <thead>
+                    <tr>
+                        <th>Edit</th>
+                        <th>Sl No</th>
+                        <th>Item Name</th>
+                        <th>Rate</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                   <!-- in here creating or adding row for every item automaticallty by javascript -->
+                </tbody>
+            </table>
+        </div>
+        
+        
+        
+        <div id="divFinalResult">
+            
+        </div>
+        
+        <div id="footer">
+            <p>Copyright &copy; 2016 Alinsworld. Developed by Alin.</p>
+        </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> --> <!-- v.1.11.1 from the server -->
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
